@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --primary-color: #008cba;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding-top: 40px;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header h1 span,
+.header h1 i {
+  color: var(--primary-color);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form label {
+  font-size: 14px;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: outline-color 0.2s ease;
+}
+
+form input:focus {
+  outline: 1px solid #008cba;
+}
+
+form button {
+  padding: 11px;
+  margin-top: 5px;
+  border: 0;
+  background: #019dd1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+form button:hover {
+  background: var(--primary-color);
+}
+
+/* Table */
+.table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table td a {
+  padding: 6px 15px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #ca0b00;
+}
+
+.table td a:hover {
+  background: #b80a01;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.alert {
+  padding: 13px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  margin: 10px 0 14px 0;
+}
+
+.alert.alert-danger {
+  background: rgb(219, 30, 30);
+}
+
+.alert.alert-success {
+  background: rgb(14, 148, 43);
+}

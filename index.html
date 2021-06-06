@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>JavaScript BookList App</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1><i class="fas fa-book-open"></i> My<span>Book</span>List</h1>
+        <!-- <div class="alert alert-success">Error</div> -->
+        <!-- Form -->
+        <form action="#" id="book__form">
+          <label>Title</label>
+          <input type="text" name="title" id="input__title" />
+          <label>Author</label>
+          <input type="text" name="author" id="input__author" />
+          <label>ISBN#</label>
+          <input type="text" name="isbn" id="input__isbn" />
+          <button id="btn__add" type="submit">Add Book</button>
+        </form>
+      </header>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book__list">
+          <!-- <tr>
+            <td>sometitle</td>
+            <td>someoneauthor</td>
+            <td>3791</td>
+            <td><a href="#" class="btn-danger">X</a></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
